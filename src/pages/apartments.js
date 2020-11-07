@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 
 // plugins
-
+import { Button, Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import {FormControl, Form, ControlLabel, HelpBlock, Checkbox, Radio} from 'react-bootstrap';
 // component
 // import Header from "../../components/header";
   
@@ -9,7 +10,7 @@ import React, { Component } from "react";
 
 // import "./dashboard.css";
 
-export default class Apartments extends Component {
+export default class Buy extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -25,23 +26,49 @@ export default class Apartments extends Component {
           <section id="services" class="services">
             <div class="container">
               <div class="section-title">
-                <h2>APARTMENTS
-                </h2>
+                <h2>APARTMENTS</h2>
               </div>
-
+              <Navbar bg="dark" variant="dark">
+                 <Nav className="mr-auto">
+                     <NavDropdown title="INDIA" id="basic-nav-dropdown">
+                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                     <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                     <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                     </NavDropdown>
+                </Nav>
+                <Nav className="mr-auto">
+                     <NavDropdown title="PRICE" id="basic-nav-dropdown">
+                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                     <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                     <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                     </NavDropdown>
+                </Nav>
+                <Nav className="mr-auto">
+                     <NavDropdown title="BEDROOMS" id="basic-nav-dropdown">
+                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                     <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                     <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                     </NavDropdown>
+                </Nav>
+                <Nav className="mr-auto">
+                     <NavDropdown title="MORE FEATURES" id="basic-nav-dropdown">
+                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                     <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                     <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                     </NavDropdown>
+                </Nav>
+                <Form inline>
+                   <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                   <Button variant="outline-info">Search</Button>
+                   </Form>
+               </Navbar>
               <div class="row">
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                   <div class="icon-box">
                     <div class="icon">
                       <i class="icofont-heart-beat"></i>
                     </div>
-                    <div className="buy-profile-notes-img">
-                  {/* <img
-                    src={require(".desktop/skill.png")}
-                    alt="logo"
-                  /> */}
-                </div>
-                    <h4>
+                      <h4>
                       <a href="">CHENNAI</a>
                     </h4>
                     <p>
