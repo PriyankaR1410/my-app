@@ -39,6 +39,7 @@ export default class Dashboard extends Component {
                      <NavDropdown.Item>ANDRA PRADESH</NavDropdown.Item>
                      </NavDropdown>
                 </Nav>
+
                 <Nav className="mr-auto">
                      <NavDropdown title="BEDROOMS" id="basic-nav-dropdown">
                      <h6>MINIMUM</h6>
@@ -53,6 +54,7 @@ export default class Dashboard extends Component {
                      <NavDropdown.Item>4 BEDROOMS</NavDropdown.Item>
                      </NavDropdown>
                 </Nav>
+                
                 <Nav className="mr-auto">
                      <NavDropdown title="PRICE" id="basic-nav-dropdown">
                      <h6>MINIMUM</h6>
@@ -61,6 +63,7 @@ export default class Dashboard extends Component {
                      <NumericInput min={1000} max={10000} step={ 1000 } value={0}/>
                      </NavDropdown>
                 </Nav>
+               
                 <Nav className="mr-auto">
                      <NavDropdown title="MORE FEATURES" id="basic-nav-dropdown">
                      <h6>FURNISHING</h6>                  

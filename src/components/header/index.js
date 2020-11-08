@@ -24,100 +24,131 @@ export default class Header extends Component {
       <div className="header-sec">
         <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
           <div class="container d-flex">
-            {/* <div class="contact-info mr-auto">
-              <i class="icofont-envelope"></i>{" "}
-              <a href="mailto:contact@example.com">contact@example.com</a>
-              <i class="icofont-phone"></i> +1 5589 55488 55
-              <i class="icofont-google-map"></i> A108 Adam Street, NY
-            </div> */}
-            {/* <div class="social-links">
-              <a href="#" class="twitter">
-                <i class="icofont-twitter"></i>
-              </a>
-              <a href="#" class="facebook">
-                <i class="icofont-facebook"></i>
-              </a>
-              <a href="#" class="instagram">
-                <i class="icofont-instagram"></i>
-              </a>
-              <a href="#" class="skype">
-                <i class="icofont-skype"></i>
-              </a>
-            </div> */}
           </div>
         </div>
         <header id="header" class="fixed-top">
           <div class="container d-flex align-items-center">
-            <h1 class="logo mr-auto">
-              {/* <a href="index.html">PRISHA PROPERTIES</a> */}
-              <Link to='/prisha'>PRISHA PROPERTIES</Link>
-              {/* <img src={require("../../../assets/images/images(2).png")}/> */}
-            </h1>
-            {/* <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> */}
-
+            <h1 class="logo mr-auto"> PROPERTIES </h1>
             <nav class="nav-menu d-none d-lg-block">
               <ul>
-                <li class="active">
-                <Link to="/buy">BUY</Link>
-                </li>
-                <li>
-                <Link to="/rent">RENT</Link>
-                </li>
-                <li>
-                <Link to="/commercial">COMMERCIAL</Link>
-                </li>
-                <li>
-                  <Link to="/apartments">APARTMENTS</Link>
-                </li>
-                {/* <li>
-                  <a href="#doctors">Doctors</a>
+              <li class="drop-down">
+                  <a href="">PROPERTY FOR RENT</a>
+                  <ul>
+                    <li class="drop-down">
+                          <a href="">VILLA/HOUSE FOR RENT</a>
+                    </li>
+                    <li>
+                          <a href="">APARTMENTS/FLAT FOR RENT</a>
+                    </li>
+                    <li>
+                          <a href="">COMMERCIAL FOR RENT</a>
+                     </li>
+                     <li>
+                          <a href="">ROOMS FOR RENT</a>
+                      </li>
+                  </ul>
                 </li>
                 <li class="drop-down">
-                  <a href="">Drop Down</a>
+                  <a href="">PROPERTY FOR SALE</a>
                   <ul>
-                    <li>
-                      <a href="#">Drop Down 1</a>
-                    </li>
                     <li class="drop-down">
-                      <a href="#">Deep Drop Down</a>
+                          <a href="">VILLA/HOUSE FOR SALE</a>
+                    </li>
+                    <li>
+                          <a href="">APARTMENTS/FLAT FOR SALE</a>
+                    </li>
+                    <li>
+                          <a href="">COMMERCIAL FOR SALE</a>
+                     </li>
+                     <li>
+                          <a href="">ROOMS FOR SALE</a>
+                      </li>
+                  </ul>
+                </li>
+                <li class="drop-down">
+                  <a href="">CLASSIFIEDS</a>
+                  <ul>
+                    <li class="drop-down">
+                          <a href="">ELECTRONICS</a>
                       <ul>
                         <li>
-                          <a href="#">Deep Drop Down 1</a>
+                          <a href="">GADGETS</a>
                         </li>
                         <li>
-                          <a href="#">Deep Drop Down 2</a>
+                          <a href="">TELEVISIONS</a>
                         </li>
                         <li>
-                          <a href="#">Deep Drop Down 3</a>
+                          <a href="">SMART HOME</a>
                         </li>
                         <li>
-                          <a href="#">Deep Drop Down 4</a>
-                        </li>
-                        <li>
-                          <a href="#">Deep Drop Down 5</a>
+                          <a href="">HOME THEATER</a>
                         </li>
                       </ul>
                     </li>
-                    <li>
-                      <a href="#">Drop Down 2</a>
-                    </li>
-                    <li>
-                      <a href="#">Drop Down 3</a>
-                    </li>
-                    <li>
-                      <a href="#">Drop Down 4</a>
-                    </li>
+                    <li class="drop-down">
+                          <a href="">COMPUTER AND NETWORKING</a>
+                      <ul>
+                        <li>
+                          <a href="">COMPUTERS</a>
+                        </li>
+                        <li>
+                          <a href="">SOFTWARE</a>
+                        </li>
+                      </ul>
+                     </li>
+                     <li class="drop-down">
+                          <a href="">HOME APPLIANCES</a>
+                      <ul>
+                        <li>
+                          <a href="">OUTDOOR APPLIANCES</a>
+                        </li>
+                        <li>
+                          <a href="">VACCUMS</a>
+                        </li>
+                      </ul>
+                     </li>
+                     <li class="drop-down">
+                          <a href="">BABY ITEMS</a>
+                      <ul>
+                        <li>
+                          <a href="">BABY GEARS</a>
+                        </li>
+                        <li>
+                          <a href="">BABY TOYS</a>
+                        </li>
+                      </ul>
+                     </li>
+                     <li class="drop-down">
+                          <a href="">PETS</a>
+                      <ul>
+                        <li>
+                          <a href="">PET ACCESSORIES</a>
+                        </li>
+                      </ul>
+                     </li>
+                     <li class="drop-down">
+                          <a href="">GAMING</a>
+                      <ul>
+                        <li>
+                          <a href="">VIDEO GAMES</a>
+                        </li>
+                      </ul>
+                     </li>
+                     <li class="drop-down">
+                          <a href="">SPORTS EQUIPMENTS</a>
+                      <ul>
+                        <li>
+                          <a href="">CYCLING</a>
+                        </li>
+                        <li>
+                          <a href="">INDOOR SPORTS</a>
+                        </li>
+                      </ul>
+                     </li>
                   </ul>
-                </li> */}
-                {/* <li>
-                  <a href="#contact">Contact</a>
-                </li> */}
+                </li>
               </ul>
             </nav>
-
-            {/* <a href="#appointment" class="appointment-btn scrollto">
-              Make an Appointment
-            </a> */}
           </div>
         </header>
       </div>
