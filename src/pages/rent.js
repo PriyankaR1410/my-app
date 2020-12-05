@@ -11,7 +11,7 @@ import NumericInput from 'react-numeric-input';
 
 // import "./dashboard.css";
 
-export default class Buy extends Component {
+export default class  extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -27,7 +27,7 @@ export default class Buy extends Component {
           <section id="services" class="services">
             <div class="container">
               <div class="section-title">
-                <h2>BUY</h2>
+                <h2>PROPERTY FOR RENT</h2>
               </div>
               <Navbar bg="dark" variant="dark">
                  <Nav className="mr-auto">
@@ -38,14 +38,7 @@ export default class Buy extends Component {
                      <NavDropdown.Item>ANDRA PRADESH</NavDropdown.Item>
                      </NavDropdown>
                 </Nav>
-                <Nav className="mr-auto">
-                     <NavDropdown title="PRICE" id="basic-nav-dropdown">
-                     <h6>MINIMUM</h6>
-                     <NumericInput min={1000} max={10000} step={ 1000 } value={0}/>
-                     <h6>MAXIMUM</h6>
-                     <NumericInput min={1000} max={10000} step={ 1000 } value={0}/>
-                     </NavDropdown>
-                </Nav>
+
                 <Nav className="mr-auto">
                      <NavDropdown title="BEDROOMS" id="basic-nav-dropdown">
                      <h6>MINIMUM</h6>
@@ -60,6 +53,16 @@ export default class Buy extends Component {
                      <NavDropdown.Item>4 BEDROOMS</NavDropdown.Item>
                      </NavDropdown>
                 </Nav>
+                
+                <Nav className="mr-auto">
+                     <NavDropdown title="PRICE" id="basic-nav-dropdown">
+                     <h6>MINIMUM</h6>
+                     <NumericInput min={1000} max={10000} step={ 1000 } value={0}/>
+                     <h6>MAXIMUM</h6>
+                     <NumericInput min={1000} max={10000} step={ 1000 } value={0}/>
+                     </NavDropdown>
+                </Nav>
+               
                 <Nav className="mr-auto">
                      <NavDropdown title="MORE FEATURES" id="basic-nav-dropdown">
                      <h6>FURNISHING</h6>                  

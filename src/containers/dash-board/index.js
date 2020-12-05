@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import { Button, Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import {FormControl, Form, ControlLabel, HelpBlock, Checkbox, Radio} from 'react-bootstrap';
 import NumericInput from 'react-numeric-input';
+// import Image from 'react-bootstrap/Image'
 
 
 // component
@@ -73,6 +74,7 @@ export default class Dashboard extends Component {
                    <Button variant="outline-info">Search</Button>
                    </Form>
                </Navbar>
+               {/* <Image src="./assets/images/banner.jpg" fluid /> */}
         </div>
       </div>
       </div>

@@ -11,7 +11,8 @@ import {
   Button,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Commercial from "../../pages/commercial";
+import Commercial from "../../pages/sale";
+
 
 export default class Header extends Component {
   constructor(props) {
@@ -32,7 +33,8 @@ export default class Header extends Component {
             <nav class="nav-menu d-none d-lg-block">
               <ul>
               <li class="drop-down">
-                  <a href="">PROPERTY FOR RENT</a>
+                  {/* <a href="">PROPERTY FOR RENT</a> */}
+                  <Link to ="/rent">PROPERTY FOR RENT</Link>
                   <ul>
                     <li class="drop-down">
                           <a href="">VILLA/HOUSE FOR RENT</a>
@@ -49,7 +51,7 @@ export default class Header extends Component {
                   </ul>
                 </li>
                 <li class="drop-down">
-                  <a href="">PROPERTY FOR SALE</a>
+                <Link to ="/sale">PROPERTY FOR SALE</Link>
                   <ul>
                     <li class="drop-down">
                           <a href="">VILLA/HOUSE FOR SALE</a>
